@@ -1,0 +1,12 @@
+---
+  - name: Installation of java and configuration of  tomcat server
+    hosts: all
+    gather_facts: false
+    become: yes
+    tasks:
+
+     - name: deploy the war file into tomcat server
+       copy: 
+         src: $WORKSPACE/*.war
+         dest: /opt/tomcat/apache-tomcat/webapps
+...
