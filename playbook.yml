@@ -5,6 +5,9 @@
     become: yes
     tasks:
 
+     - name: pause the playbook for 5 minute
+       pause:
+         minutes: 5
      - name: deploy the war file into tomcat server
        copy: 
          src: $WORKSPACE/sample.war
