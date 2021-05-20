@@ -7,6 +7,6 @@
 
      - name: deploy the war file into tomcat server
        copy: 
-         src: $WORKSPACE/*.war
+         src: $WORKSPACE/sample.war
          dest: /opt/tomcat/apache-tomcat/webapps
 ...
