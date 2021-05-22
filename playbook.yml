@@ -7,9 +7,9 @@
 
      - name: pause the playbook for 5 minute
        pause:
-         minutes: 5
+         minutes: 2
      - name: deploy the war file into tomcat server
        copy: 
          src: $WORKSPACE/sample.war
-         dest: /opt/tomcat/apache-tomcat/webapps
+         dest: /opt/wildfly-11.0.0.Final/standalone/deployments
 ...
