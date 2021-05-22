@@ -90,7 +90,7 @@ resource "aws_security_group" "sg01" {
 
 
 resource "aws_instance" "uat-publicserver1" {
-  ami           = "ami-06c6dd3519b4e4f79"
+  ami           = "ami-096f326f424057de5"
   instance_type = "t2.micro"
   key_name = "mykpair_01"
   security_groups = [aws_security_group.sg01.id]
