@@ -7,7 +7,7 @@
 
      - name: pause the playbook for 5 minute
        pause:
-         minutes: 2
+         minutes: 1
      - name: deploy the war file into tomcat server
        copy: 
          src: $WORKSPACE/sample.war
