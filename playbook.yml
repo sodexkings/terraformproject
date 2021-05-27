@@ -10,6 +10,6 @@
          minutes: 1
      - name: deploy the war file into tomcat server
        copy: 
-         src: $WORKSPACE/sample.war
+         src: /var/lib/jenkins/workspace/project01/sample.war
          dest: /opt/wildfly-11.0.0.Final/standalone/deployments
 ...
