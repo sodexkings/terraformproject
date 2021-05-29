@@ -5,11 +5,11 @@
     become: yes
     tasks:
 
-     - name: pause the playbook for 5 minute
+     - name: pause the playbook for 1 minute
        pause:
          minutes: 1
      - name: deploy the war file into tomcat server
        copy: 
-         src: /var/lib/jenkins/workspace/project01/*.war
+         src: /var/lib/jenkins/workspace/project01/jenkins.war
          dest: /opt/wildfly-11.0.0.Final/standalone/deployments
 ...
