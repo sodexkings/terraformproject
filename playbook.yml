@@ -10,6 +10,6 @@
          minutes: 1
      - name: deploy the war file into tomcat server
        copy: 
-         src: /var/lib/jenkins/workspace/project01/jenkins.war
+         src: /var/lib/jenkins/workspace/maven_test1/addressbook_main/target/addressbook.war
          dest: /opt/wildfly-11.0.0.Final/standalone/deployments
 ...
